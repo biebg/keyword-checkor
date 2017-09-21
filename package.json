@@ -1,12 +1,19 @@
 {
   "name": "keyword-checkor",
   "version": "1.0.0",
-  "description": "keyword words check",
+  "description": "senstive word check",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buctyoyo/keyword-checkor.git"
+  },
   "author": "shouchao.yuan@gmail.com",
   "license": "MIT",
-  "dependencies": {}
+  "bugs": {
+    "url": "https://github.com/buctyoyo/keyword-checkor/issues"
+  },
+  "homepage": "https://github.com/buctyoyo/keyword-checkor#readme"
 }
