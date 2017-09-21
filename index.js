@@ -35,6 +35,27 @@ KeywordCheckor.prototype.addWord = function(word) {
 };
 
 /**
+ * remove senstive word
+ * @param word
+ */
+KeywordCheckor.prototype.removeWord = function(word) {
+    var node = this.map;
+    var parent = null;
+    for (var i = 0; i < word.length; i++) {
+        if (!node[word[i]]) {
+            return;
+        }
+        parent = node;
+        if (Object.keys(parent).length === 1) {
+            delete parent[word[i]];
+            return;
+        }
+        node = node[word[i]];
+    }
+    node.isEnd = true;
+};
+
+/**
  * find key word  and return keyword array
  * if not keyword return []
  * @param s
@@ -98,5 +119,6 @@ KeywordCheckor.prototype.replace = function(s) {
     }
     return s;
 };
+
 
 module.exports = KeywordCheckor;

@@ -8,3 +8,7 @@ console.log(key1);
 
 var s = checkor.replace("蛤蟆去了长城");
 console.log(s);
+
+checkor.removeWord("蛤蟆");
+var s1 = checkor.replace("蛤蟆去了长城");
+console.log(s1);

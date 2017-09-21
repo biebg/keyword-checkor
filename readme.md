@@ -20,6 +20,12 @@ var s = checkor.replace("蛤蟆去了长城");
 console.log(s);
 //**去了**
 
+
+checkor.removeWord("蛤蟆");
+var s1 = checkor.replace("蛤蟆去了长城");
+console.log(s1);
+//蛤蟆去了**
+
 ```
 
 PS:  part of code  copy from [text-censor](https://github.com/aojiaotage/text-censor)
